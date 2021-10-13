@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "tags": [
+    {
+      "name": "my-custom-element",
+      "description": "Attributes:\n\n  * `name` {`string`} - \n\n  * `numprop` {`number`} - \n\nProperties:\n\n  * `name` {`string`} - \n\n  * `numprop` {`number`} - ",
+      "attributes": [
+        {
+          "name": "name",
+          "description": "`name` {`string`} - \n\nProperty: name\n\nDefault: default"
+        },
+        {
+          "name": "numprop",
+          "description": "`numprop` {`number`} - \n\nProperty: numprop\n\nDefault: -1000"
+        }
+      ]
+    }
+  ],
+  "globalAttributes": [],
+  "valueSets": []
+}

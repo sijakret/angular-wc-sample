@@ -26,6 +26,10 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true,
-    "webComponentPattern": "my-prefix-"
+    "strictInputTypes": true,
+    "strictAttributeTypes": true,
+    "customSchema": [
+      "my-custom-element^[HTMLElement]|string-prop,#num-prop"
+    ]
   }
 }

@@ -4,7 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "serve:inspect": "node --inspect-brk ./node_modules/@angular/cli/bin/ng serve",
     "build": "ng build",
+    "build:inspect": "node --inspect-brk ./node_modules/@angular/cli/bin/ng build",
+    "analyze": "npx web-component-analyzer ./src/app/my-prefix-custom-element.ts --outFile custom-elements.json --format vscode",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

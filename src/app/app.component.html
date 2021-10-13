@@ -9,7 +9,7 @@
 <!-- regular angular with a prop -->
 <component-exists></component-exists>
 
-<component-exists clamp name="with clamp directive"></component-exists>
+<component-exists name='12'></component-exists>
 
 <!-- same component, but trying to set with wrong type => error 
 <component-exists [prop]="1"></component-exists>
@@ -24,8 +24,11 @@
 -->
 
 <!-- web component => NO error -->
-<my-prefix-custom-element [numprop]=100></my-prefix-custom-element>
+<my-custom-element [num-prop]="1" [string-prop]="1"></my-custom-element>
 
+<my-noexist-element></my-noexist-element>
 
-<!-- not web component => uncaught error -->
+<div id1="sd"></div>
+<!-- not web component => uncaught error
 <my-prefix-custom-element-noexist></my-prefix-custom-element-noexist>
+ -->

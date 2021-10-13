@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import './my-prefix-custom-element';
 
 
 // angular component
@@ -27,17 +28,6 @@ export class ClampDirective {
   }
 }
 
-// custom element
-import { LitElement, html, customElement,property } from 'lit-element'
-
-@customElement('my-prefix-custom-element')
-export class SHUICustomElement extends LitElement {
-  @property() name = 'default'
-  @property() numprop = -1000
-  render() {
-    return html`<b style="color: rgba(255,0,0,1)">WEBCOMPONENT: ${this.name} - number ${this.numprop}</b>`
-  }
-}
 
 
 @NgModule({
@@ -51,8 +41,7 @@ export class SHUICustomElement extends LitElement {
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
 
